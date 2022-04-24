@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size5dp"
+    android:orientation="horizontal" >
+
+    <EditText
+      android:id="@+id/txtTypeName"
+      android:layout_width="@dimen/size150dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/size10dp"
+      android:padding="@dimen/size10dp"
+      android:hint="@string/food_type"
+      android:inputType="text"
+      android:singleLine="true"
+      android:textColor="@color/black"
+      android:textColorHint="@color/colorGray"
+      android:autofillHints="@string/food_type"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/txtColorString"
+      android:layout_width="@dimen/size150dp"
+      android:layout_height="@dimen/size50dp"
+      android:layout_marginStart="@dimen/size20dp"
+      android:background="@color/colorWhite"
+      android:textSize="@dimen/size18sp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_margin="@dimen/size5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/btnColorPicker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/size10dp"
+      android:text="@string/color_hint"
+      android:layout_weight="1"
+      android:background="@color/colorLightGreen"
+      style="?android:attr/buttonBarButtonStyle" />
+
+    <Button
+      android:id="@+id/btnAddFoodType"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/add"
+      android:layout_weight="1"
+      android:layout_margin="@dimen/size10dp"
+      android:background="@color/colorAccent"
+      style="?android:attr/buttonBarButtonStyle" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size10dp">
+
+    <ListView
+      android:id="@+id/lstFoodTypes"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:dividerHeight="@dimen/size10sp" />
+  </LinearLayout>
+</LinearLayout>

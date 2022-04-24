@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorYellow" >
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size130dp"
+    android:background="@drawable/coffee_background_header">
+
+    <TextView
+      android:id="@+id/txtDetailFoodName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/colorBrown"
+      android:textStyle="bold"
+      android:textSize="@dimen/size30sp"
+      android:layout_marginTop="@dimen/size80dp"
+      android:layout_marginStart="@dimen/size10dp"
+      android:layout_marginBottom="@dimen/size10dp" />
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/txtDetailFoodPrice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size10dp"
+    android:textSize="@dimen/size18sp"
+    android:textColor="@color/colorRed"
+    android:textStyle="bold"
+    android:layout_gravity="center" />
+
+  <RadioGroup
+    android:id="@+id/rdSize"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checkedButton="@id/rdSmall"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <RadioButton
+      android:id="@+id/rdSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/small"
+      android:textSize="@dimen/size18sp"
+      android:textStyle="bold"
+      android:textColor="@color/colorRed" />
+
+    <RadioButton
+      android:id="@+id/rdMedium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size25dp"
+      android:text="@string/medium"
+      android:textSize="@dimen/size18sp"
+      android:textStyle="bold"
+      android:textColor="@color/colorRed" />
+
+    <RadioButton
+      android:id="@+id/rdLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size25dp"
+      android:text="@string/large"
+      android:textSize="@dimen/size18sp"
+      android:textStyle="bold"
+      android:textColor="@color/colorRed" />
+  </RadioGroup>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+      android:id="@+id/btnMinus"
+      android:layout_width="@dimen/size40dp"
+      android:layout_height="@dimen/size40dp"
+      android:layout_margin="@dimen/size10dp"
+      android:text="@string/minus"
+      android:textSize="@dimen/size18sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/txtQuantity"
+      android:layout_width="@dimen/size40dp"
+      android:layout_height="@dimen/size40dp"
+      android:textStyle="bold"
+      android:textSize="@dimen/size25sp"
+      android:gravity="center"
+      android:textColor="@color/black"
+      android:background="@drawable/text_view_border" />
+
+    <Button
+      android:id="@+id/btnPlus"
+      android:layout_width="@dimen/size40dp"
+      android:layout_height="@dimen/size40dp"
+      android:layout_marginStart="@dimen/size10dp"
+      android:text="@string/plus"
+      android:textSize="@dimen/size18sp"
+      android:textStyle="bold" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size10dp"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/btnAddNew"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/add"
+      android:textColor="@color/colorWhite"
+      android:layout_weight="1"
+      android:padding="@dimen/size10dp"
+      android:layout_marginEnd="@dimen/size10dp"
+      android:background="@color/colorLightBlue"
+      style="?android:attr/buttonBarButtonStyle"/>
+
+    <Button
+      android:id="@+id/btnExit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/exit"
+      android:textColor="@color/colorWhite"
+      android:layout_weight="1"
+      android:padding="@dimen/size10dp"
+      android:background="@color/colorRed"
+      style="?android:attr/buttonBarButtonStyle" />
+  </LinearLayout>
+</LinearLayout>

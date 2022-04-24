@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorYellow">
+
+  <ImageView
+    android:id="@+id/imgFood"
+    android:layout_width="@dimen/size100dp"
+    android:layout_height="@dimen/size100dp"
+    android:layout_marginTop="@dimen/size10dp"
+    android:src="@drawable/employee"
+    android:contentDescription="@string/image_food" />
+
+  <LinearLayout
+    android:id="@+id/foodInfo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size100dp"
+    android:layout_toEndOf="@+id/imgFood"
+    android:layout_marginTop="@dimen/size10dp"
+    android:layout_marginStart="@dimen/size10dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/txtFoodName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/size10dp"
+      android:padding="@dimen/size10dp"
+      android:textSize="@dimen/size18sp"
+      android:textColor="@color/black"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/txtPrice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/size10dp"
+      android:layout_marginStart="@dimen/size10dp"
+      android:padding="@dimen/size10dp"
+      android:textSize="@dimen/size18sp"
+      android:textColor="@color/colorRed"
+      android:textStyle="bold"
+      tools:ignore="RelativeOverlap" />
+  </LinearLayout>
+</RelativeLayout>

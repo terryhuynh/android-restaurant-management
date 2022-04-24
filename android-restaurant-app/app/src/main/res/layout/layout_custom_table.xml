@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="@dimen/size10dp">
+
+  <TextView
+    android:id="@+id/txtTableName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textSize="@dimen/size18sp"
+    android:textStyle="bold"
+    android:text="@string/add"
+    android:textColor="@color/colorPrimary"
+    />
+
+  <ImageView
+    android:id="@+id/imgTable"
+    android:layout_width="@dimen/size150dp"
+    android:layout_height="@dimen/size150dp"
+    android:layout_below="@id/txtTableName"
+    android:contentDescription="@string/des_img"
+    android:layout_margin="@dimen/size5dp"
+    android:src="@drawable/table_empty"
+    />
+
+  <ImageView
+    android:id="@+id/imgOrder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgTable"
+    android:contentDescription="@string/des_img"
+    android:src="@drawable/order"
+    />
+
+  <ImageView
+    android:id="@+id/imgPayment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgTable"
+    android:layout_toEndOf="@id/imgOrder"
+    android:contentDescription="@string/des_img"
+    android:src="@drawable/payment"
+    />
+
+  <ImageView
+    android:id="@+id/imgHide"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/hide"
+    android:contentDescription="@string/des_img"
+    android:layout_below="@id/imgTable"
+    android:layout_toEndOf="@+id/imgPayment"
+    />
+</RelativeLayout>

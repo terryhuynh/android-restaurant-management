@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:paddingTop="@dimen/size16dp"
+  android:paddingBottom="@dimen/size16dp"
+  android:paddingLeft="@dimen/size16dp"
+  android:paddingRight="@dimen/size16dp"
+  android:background="@color/colorPrimary">
+
+  <TextView
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size10dp"
+    android:layout_above="@id/lnSignup"
+    android:layout_centerHorizontal="true"
+    android:padding="@dimen/size10dp"
+    android:text="@string/add_new_employee"
+    android:textColor="@color/colorWhite"
+    android:textSize="@dimen/size30sp" />
+
+  <LinearLayout
+    android:id="@+id/lnSignup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <!-- Username -->
+    <EditText
+      android:id="@+id/txtUsername"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/size10dp"
+      android:padding="@dimen/size10dp"
+      android:background="@color/colorWhite"
+      android:drawablePadding="@dimen/size10dp"
+      android:drawableStart="@drawable/user"
+      android:hint="@string/hint_username"
+      android:inputType="text"
+      android:singleLine="true"
+      android:textColor="@color/black"
+      android:textColorHint="@color/colorGray"
+      android:autofillHints="username" />
+
+    <!-- Password -->
+    <EditText
+      android:id="@+id/txtPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/size10dp"
+      android:background="@color/colorWhite"
+      android:drawableStart="@drawable/password"
+      android:drawablePadding="@dimen/size10dp"
+      android:hint="@string/hint_password"
+      android:padding="@dimen/size10dp"
+      android:textColorHint="@color/colorGray"
+      android:inputType="textPassword"
+      android:textColor="@color/black"
+      android:singleLine="true"
+      android:autofillHints="password" />
+
+    <!-- Radio Button -->
+    <RadioGroup
+      android:id="@+id/rdgGender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/size10dp"
+      android:orientation="horizontal">
+
+      <RadioButton
+        android:id="@+id/rdMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/male"
+        android:textColor="@color/colorWhite"
+        app:buttonTint="@color/colorCheck" />
+
+      <RadioButton
+        android:id="@+id/rdFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/female"
+        android:textColor="@color/colorWhite"
+        app:buttonTint="@color/colorCheck" />
+    </RadioGroup>
+
+    <!-- Birthday -->
+    <EditText
+      android:id="@+id/txtBirthday"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/size10dp"
+      android:background="@color/colorWhite"
+      android:drawableStart="@drawable/birthday"
+      android:drawablePadding="@dimen/size10dp"
+      android:hint="@string/birthday"
+      android:padding="@dimen/size10dp"
+      android:textColorHint="@color/colorGray"
+      android:textColor="@color/black"
+      android:singleLine="true"
+      android:inputType="text"
+      android:autofillHints="birthday" />
+
+    <!-- Radio Button -->
+    <RadioGroup
+      android:id="@+id/rdgRole"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/size10dp"
+      android:orientation="horizontal" >
+
+      <RadioButton
+        android:id="@+id/rdAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/admin"
+        android:textColor="@color/colorWhite"
+        app:buttonTint="@color/colorCheck" />
+
+      <RadioButton
+        android:id="@+id/rdEm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/employee"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        app:buttonTint="@color/colorCheck" />
+    </RadioGroup>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/btnAddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:textColor="@color/colorWhite"
+        android:layout_weight="1"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:background="@color/colorLightBlue"
+        style="?android:attr/buttonBarButtonStyle"/>
+
+      <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textColor="@color/colorWhite"
+        android:layout_weight="1"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:background="@color/colorRed"
+        style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>

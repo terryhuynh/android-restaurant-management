@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size190dp"
+    android:background="@drawable/coffee_background_header">
+
+    <TextView
+      android:id="@+id/txtFoodTypeName"
+      android:layout_width="@dimen/size100dp"
+      android:layout_height="@dimen/size50dp"
+      android:textColor="@color/colorBrown"
+      android:textStyle="bold"
+      android:textSize="@dimen/size30sp"
+      android:layout_marginTop="@dimen/size130dp"
+      android:layout_marginStart="@dimen/size10dp"
+      android:layout_marginBottom="@dimen/size10dp" />
+  </RelativeLayout>
+
+  <ListView
+    android:id="@+id/lstFoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:dividerHeight="@dimen/size10sp" />
+</LinearLayout>
